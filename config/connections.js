@@ -67,6 +67,7 @@ module.exports.connections = {
     password: 'H4c4mWwR2Vsw-',
     database: 'nodejs'
   },
+  
 
   /***************************************************************************
   *                                                                          *
