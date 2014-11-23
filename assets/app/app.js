@@ -30,6 +30,7 @@
         });
 
 })(
+
     window.angular,
     window._
 );
