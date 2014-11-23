@@ -1,0 +1,9 @@
+<h1>Add / Edit User</h1>
+<form name="new_User_form">
+    <div ng-repeat="(attr_name, attr_value) in model_def">
+        <label for="{{attr_name}}">{{attr_name}}</label>
+        <input type="text" ng-model="User[attr_name]" name="{{attr_name}}" />
+    </div>
+    <button ng-click="save(User)">Save User</button>
+    <button ui-sref="Users.list">Cancel</button>
+</form>

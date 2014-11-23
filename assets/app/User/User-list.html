@@ -1,0 +1,12 @@
+<h1>Users</h1>
+<ul>
+    <li ng-repeat="User in Users">
+        <div>
+            <p ng-repeat="(key, val) in model_def">{{key}} : {{User[key]}}</p>
+        </div>
+        <a href="" ui-sref="Users.edit({ id: User.id })">Edit</a>
+        <a href="" ng-click="remove(User)">Delete</a>
+    </li>
+</ul>
+<div ng-show="Users.length === 0">Looks like you haven't added any Users yet?</div>
+<a ng-hide="adding" ui-sref="Users.add">Add A New User</a>
