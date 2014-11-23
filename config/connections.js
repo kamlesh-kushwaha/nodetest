@@ -56,13 +56,16 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  someMongodbServer: {
+ 
+  mongo: {
     adapter: 'sails-mongo',
-    host: 'localhost',
-    port: 27017,
-    // user: 'username',
-    // password: 'password',
-    // database: 'your_mongo_db_name_here'
+    host: '54717b79e0b8cdb4f6000025@nodejs-kamlesh.rhcloud.com',
+    port: '62651',
+    user: 'admin',
+    // Psst.. You can put your password in config/local.js instead
+    // so you don't inadvertently push it up if you're using version control
+    password: 'H4c4mWwR2Vsw-',
+    database: 'nodejs'
   },
 
   /***************************************************************************
